@@ -1,0 +1,12 @@
+<?php $this->layout('layouts::_base') ?>
+
+<?php if ($page->getSections()) : ?>
+	<?php foreach ($page->sections as $name => $section) : ?>
+			<?= $section ?>
+	<?php endforeach ?>
+<?php endif; ?>
+
+
+<div class="content" editable=true>
+	<?= $content ?>
+</div>
